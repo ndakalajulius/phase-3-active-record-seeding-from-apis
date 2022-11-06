@@ -156,7 +156,8 @@ puts "Seeding spells..."
 # these are the spells we want to add to the database
 spells = ["acid-arrow", "animal-messenger", "calm-emotions", "charm-person"]
 
-# iterate over each spell
+# iterate over each spellSpell.last
+
 spells.each do |spell|
   # make a request to the endpoint for the individual spell:
   response = RestClient.get "https://www.dnd5eapi.co/api/spells/#{spell}"
